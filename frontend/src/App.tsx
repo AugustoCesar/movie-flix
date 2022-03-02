@@ -1,13 +1,9 @@
-import React from 'react';
 import './App.css';
 import './assets/styles/custom.scss';
+import Routes from './Routes';
 
 function App() {
-  return (
-    <>
-      <h1>Hello World!!!</h1>
-    </>
-  );
+  return <Routes />;
 }
 
 export default App;
