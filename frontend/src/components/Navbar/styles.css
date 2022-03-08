@@ -9,20 +9,19 @@
   font-weight: 700;
 }
 
-.nav-login-logout{
-  display: none;
+.nav-logout{
+  margin-right: 15px;
+}
+.nav-logout a{
+  text-decoration: none;
+  text-align: center;
 }
 
-@media(min-width: 768px){
-  .nav-login-logout{
-    display: unset;
-    color: #FFF;
-    margin-right: 15px;
-  }
-}
-
-@media(min-width: 992px){
-  .nav-login-logout{
-    margin-right: 40px;
-  }
+.nav-logout div{
+  width: 100px;
+  height: 30px;
+  border: 1px solid #000;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 10px;
 }

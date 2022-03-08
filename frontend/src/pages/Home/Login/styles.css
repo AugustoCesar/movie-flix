@@ -35,6 +35,12 @@
   background-color: #FFF;
   height: 45px;
   border: 1px solid #FEFEFE;
+  color: #000000;
+}
+
+.base-input:focus {
+  background-color: #FFF;
+  color: #000000;
 }
  
 .base-input::placeholder {
