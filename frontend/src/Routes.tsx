@@ -1,5 +1,6 @@
 import PrivateRoute from 'components/PrivateRoute';
 import MoviesList from 'pages/Private/MovieCatalog';
+import MovieDetails from 'pages/Private/MovieDetails';
 import { Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -15,6 +16,9 @@ const Routes = () => (
       <PrivateRoute path="/movies">
         <Route path="/movies" exact>
           <MoviesList />
+        </Route>
+        <Route path="/movies/:movieId">
+          <MovieDetails />
         </Route>
       </PrivateRoute>
     </Switch>

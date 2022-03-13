@@ -2,3 +2,8 @@
   justify-content: space-around;
   padding: 20px;
 }
+
+.catalog-container a{
+  color: #FFF;
+  text-decoration: none;
+}
