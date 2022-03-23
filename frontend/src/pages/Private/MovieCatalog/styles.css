@@ -1,9 +1,13 @@
 .catalog-container {
   justify-content: space-around;
-  padding: 20px;
+  margin: 10px;
 }
 
 .catalog-container a{
   color: #FFF;
   text-decoration: none;
+}
+
+.catalog-filter-container{
+  margin: 20px 0;
 }

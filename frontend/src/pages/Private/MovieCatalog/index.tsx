@@ -1,16 +1,13 @@
 import { AxiosRequestConfig } from 'axios';
 import MovieCard from 'components/MovieCard';
+import MovieFilter, { MovieFilterData } from 'components/MovieFilter';
+import Pagination from 'components/Pagination';
 import { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Genre } from 'types/genre';
 import { Movie } from 'types/movie';
 import { SpringPage } from 'types/vendor/spring';
 import { requestBackend } from 'util/requests';
 import './styles.css';
-
-export type MovieFilterData = {
-  genre: Genre | null;
-};
 
 type ControlComponentsData = {
   activePage: number;
@@ -18,9 +15,8 @@ type ControlComponentsData = {
 };
 
 const MovieCatalog = () => {
-
   const [page, setPage] = useState<SpringPage<Movie>>();
-  
+
   const [controlComponentsData, setControlComponentsData] =
     useState<ControlComponentsData>({
       activePage: 0,
@@ -58,26 +54,29 @@ const MovieCatalog = () => {
   useEffect(() => {
     getMovies();
   }, [getMovies]);
-  
+
   return (
     <div className="container">
       <div className="catalog-container">
-        <h1>Tela listagem de filmes</h1>
-
+        <div className="catalog-filter-container">
+          <MovieFilter onSubmitFilter={handleSubmitFilter} />
+        </div>
         <div className="row">
-        {page?.content.map((movie) => (
-          <div key={movie.id} className="col-sm-6 col-md-12">
-            <MovieCard movie={movie} />
-          </div>
-        ))}
+          {page?.content.map((movie) => (
+            <div key={movie.id} className="col-sm-6 col-xl-3">
+              <Link to={`/movies/${movie.id}`}>
+                <MovieCard movie={movie} />
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
-        {/* <p>
-          <Link to="/movies/1">Acessar /movies/1</Link>
-        </p>
-        <p>
-          <Link to="/movies/2">Acessar /movies/2</Link>
-        </p> */}
-      </div>
+      <Pagination
+        forcePage={page?.number}
+        pageCount={page ? page.totalPages : 0}
+        range={4}
+        onChange={handlePageChange}
+      />
     </div>
   );
 };

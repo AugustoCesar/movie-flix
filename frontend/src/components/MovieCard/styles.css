@@ -1,0 +1,39 @@
+.movie-card {
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.card-top-container {
+  text-align: center;
+}
+
+.card-top-container img {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.card-bottom-container {
+  height: 140px;
+  padding: 10px 20px 30px 15px;
+}
+
+.card-bottom-container h2 {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+}
+
+.card-bottom-container h4 {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.015em;
+  color: #ffc700;
+}
+
+.card-bottom-container p {
+  font-size: 14px;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+  
+}
