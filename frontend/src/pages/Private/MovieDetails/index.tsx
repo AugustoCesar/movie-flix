@@ -1,4 +1,5 @@
 import { AxiosRequestConfig } from 'axios';
+import MovieInfoCard from 'components/MovieInfoCard';
 import ReviewForm from 'components/ReviewForm';
 import ReviewListing from 'components/ReviewListing';
 import { useEffect, useState } from 'react';
@@ -36,8 +37,8 @@ const MovieDetails = () => {
   };
 
   return (
-    <div className="container details-container">
-      <h1>Tela detalhes do filme id: {movieId}</h1>
+    <div className="details-container">
+      <MovieInfoCard movieId={movieId}/>
       {hasAnyRoles(['ROLE_MEMBER']) && (
         <ReviewForm movieId={movieId} onInsertReview={handleInsertReview} />
       )}

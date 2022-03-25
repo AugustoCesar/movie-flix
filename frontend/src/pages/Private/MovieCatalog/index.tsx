@@ -56,12 +56,11 @@ const MovieCatalog = () => {
   }, [getMovies]);
 
   return (
-    <div className="container">
-      <div className="catalog-container">
+    <div className="catalog-container">
         <div className="catalog-filter-container">
           <MovieFilter onSubmitFilter={handleSubmitFilter} />
         </div>
-        <div className="row">
+        <div className="row catalog-card-movie">
           {page?.content.map((movie) => (
             <div key={movie.id} className="col-sm-6 col-xl-3">
               <Link to={`/movies/${movie.id}`}>
@@ -70,7 +69,6 @@ const MovieCatalog = () => {
             </div>
           ))}
         </div>
-      </div>
       <Pagination
         forcePage={page?.number}
         pageCount={page ? page.totalPages : 0}

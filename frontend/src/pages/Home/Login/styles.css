@@ -28,6 +28,10 @@
   height: 50px;
 }
 
+.login-submit h6{
+  font-size: 20px;
+}
+
 @media (min-width: 576px) {
   .login-card {
     width: 480px;

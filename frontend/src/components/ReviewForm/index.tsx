@@ -3,6 +3,7 @@ import ButtonIcon from 'components/ButtonIcon';
 import { useForm } from 'react-hook-form';
 import { Review } from 'types/review';
 import { requestBackend } from 'util/requests';
+import { toast } from 'react-toastify';
 
 import './styles.css';
 
@@ -38,12 +39,12 @@ const ReviewForm = ({ movieId, onInsertReview }: Props) => {
 
     requestBackend(config)
       .then((response) => {
+        toast.info('Review cadastrada com sucesso');
         setValue('text', '');
         onInsertReview(response.data);
-        console.log('Sucesso ao salvar', response);
       })
-      .catch((error) => {
-        console.log('Erro ao salvar', error);
+      .catch(() => {
+        toast.error('Erro ao cadastrar review');
       });
   };
 
@@ -51,8 +52,9 @@ const ReviewForm = ({ movieId, onInsertReview }: Props) => {
     <div>
       <div className="base-card review-form">
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div >
-            <input className="base-input"
+          <div>
+            <input
+              className="base-input"
               {...register('text', {
                 required: 'Campo obrigatório',
               })}

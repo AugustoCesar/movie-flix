@@ -1,6 +1,23 @@
+.details-container {
+  padding: 20px 10px;
+}
+
 .details-container h1 {
   font-weight: 700;
   font-size: 48px;
   margin-top: 35px;
   margin-bottom: 25px;
+}
+
+@media (min-width: 576px) {
+  .details-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .details-container {
+    padding: 40px;
+  }
 }
