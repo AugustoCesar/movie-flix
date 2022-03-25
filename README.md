@@ -1,9 +1,12 @@
 # MovieFlix 
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/AugustoCesar/projeto-sds3/blob/master/LICENSE) 
 
 # About the project
 
 MovieFlix is a ReactJS project that make reviews movies and, with the MEMBER profile user logged into the application, the user will be able to type his review of a specific movie and view it in the reviews list immediately after submitting it.
+
+1. Login screen; 
+2. Paginated movie listing screen, with gender filter (authenticated access only); 
+3. Movie details screen with movie information, rating registration form, and rating list for the movie selected. (only MEMBERS can make the movie review).
 
 The project was implemented as a challenge of DevSuperior's Spring React Bootcamp with the goal of fixing the fundamentals:
 - React Hook Forms;
@@ -12,8 +15,12 @@ The project was implemented as a challenge of DevSuperior's Spring React Bootcam
 - LocalStorage;
 - Context API;
 - Authentication and authorization flows;
+- Forms
+- React select
+- React Pagination
+- React Toasts
 
-Figma's design:https://www.figma.com/file/Yul1TnqQXmBsLwm5h5nvJu/MovieFlix-front-inicial
+Figma's design: https://www.figma.com/file/6JQVnxKgKtVHLleSBBgRin/MovieFlix-front-listagem?node-id=0%3A1
 
 ## Responsive web layouts
 ![Web 1](https://github.com/AugustoCesar/assets/blob/main/img/movieflix-prints-front/01.jpeg)
@@ -31,7 +38,7 @@ Prerequisites: npm / yarn
 
 ```bash
 # clone repositório
-git clone https://github.com/AugustoCesar/bds-desafio-layout-cap-07
+git clone https://github.com/AugustoCesar/movie-flix
 
 # enter folder frontend
 cd frontend
