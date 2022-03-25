@@ -22,11 +22,18 @@ The project was implemented as a challenge of DevSuperior's Spring React Bootcam
 
 Figma's design: https://www.figma.com/file/6JQVnxKgKtVHLleSBBgRin/MovieFlix-front-listagem?node-id=0%3A1
 
-## Responsive web layouts
-![Web 1](https://github.com/AugustoCesar/assets/blob/main/img/movieflix-prints-front/01.jpeg)
-![Web 2](https://github.com/AugustoCesar/assets/blob/main/img/movieflix-prints-front/02.jpeg)
-![Web 3](https://github.com/AugustoCesar/assets/blob/main/img/movieflix-prints-front/03.jpeg)
-![Web 4](https://github.com/AugustoCesar/assets/blob/main/img/movieflix-prints-front/04.jpeg)
+## MovieFlix Mobile layouts
+![Web 1](https://github.com/AugustoCesar/assets/blob/main/img/movieflix-prints-front/movie-flix-mobile/01.jpeg)
+![Web 1](https://github.com/AugustoCesar/assets/blob/main/img/movieflix-prints-front/movie-flix-mobile/02.jpeg)
+![Web 1](https://github.com/AugustoCesar/assets/blob/main/img/movieflix-prints-front/movie-flix-mobile/03.jpeg)
+![Web 1](https://github.com/AugustoCesar/assets/blob/main/img/movieflix-prints-front/movie-flix-mobile/04.jpeg)
+![Web 1](https://github.com/AugustoCesar/assets/blob/main/img/movieflix-prints-front/movie-flix-mobile/05.jpeg)
+
+## MovieFlix web layouts
+![Web 1](https://github.com/AugustoCesar/assets/blob/main/img/movieflix-prints-front/movie-flix-web/01.jpeg)
+![Web 1](https://github.com/AugustoCesar/assets/blob/main/img/movieflix-prints-front/movie-flix-web/02.jpeg)
+![Web 1](https://github.com/AugustoCesar/assets/blob/main/img/movieflix-prints-front/movie-flix-web/03.jpeg)
+![Web 1](https://github.com/AugustoCesar/assets/blob/main/img/movieflix-prints-front/movie-flix-web/04.jpeg)
 
 
 ## Front end
