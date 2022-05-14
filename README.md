@@ -44,16 +44,16 @@ Figma's design: https://www.figma.com/file/6JQVnxKgKtVHLleSBBgRin/MovieFlix-fron
 Prerequisites: npm / yarn
 
 ```bash
-# clone repositório
+# clone repository
 git clone https://github.com/AugustoCesar/movie-flix
 
 # enter folder frontend
 cd frontend
 
-# instalar dependências
+# install dependencies
 yarn install
 
-# executar o projeto
+# run project
 yarn start
 ```
 
